@@ -1,7 +1,17 @@
+*, *::after, *::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background-image: url(https://images.unsplash.com/photo-1617957796340-9b8cefedd812?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
-    background-size: auto;
-    background-repeat: no-repeat;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "RadnikaMedium", sans-serif;
     }
     
     .navbar{
@@ -16,3 +26,11 @@ body{
         align-items: center;
         
     }
+    
+    .skills{
+        color: #293347;
+        display:inline-block;
+        width: 85px;
+        margin: 0;
+    }
+    
