@@ -1,36 +1,120 @@
-*, *::after, *::before{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    font-size: 15px;
-    line-height: 25px;
-    font-family: "RadnikaMedium", sans-serif;
-    }
-    
-    .navbar{
-    display: flex;
-    justify-content: right;
-    
-    }
-    
-    .column{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-    .skills{
-        color: #293347;
-        display:inline-block;
-        width: 85px;
-        margin: 0;
-    }
-    
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+
+
+body {
+  margin:0px;
+  font-family:"RadnikaMedium", sans-serif;
+  text-align:center;
+}
+
+#container {
+  color:#999;
+  text-transform: uppercase;
+  font-size:20px;
+  font-weight:bold;
+  padding-top:10px;  
+  width:100%;
+  bottom:15%;
+  display:block;
+}
+
+#flip {
+  height:75px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:2px 120px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 7s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+
+#flip div:second-child div {
+  background:#DC143C;
+}
+
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+.navbar {
+  background-color: #181d27;
+  display: flex;
+  justify-content: right;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.column {
+  background-color: #181d27;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+.skills {
+  display: flex;
+  color: #293347;
+  display: inline-block;
+  width: 85px;
+  margin: 0;
+  margin-right: 50%;
+}
+
+.image-of-me {
+  margin-bottom: 20%;
+  height: 60vh;
+  margin-right: 0;
+  border-radius: 20px 0 20px;
+}
+
+
