@@ -68,6 +68,11 @@ body {
   100% {margin-top:-270px;}
 }
 
+#text-color{
+  text-decoration: none;
+  color:white;
+}
+
 .navbar {
   background-color: #181d27;
   display: flex;
