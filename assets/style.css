@@ -11,11 +11,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-
-
-
 body {
   margin:0px;
   font-family:"RadnikaMedium", sans-serif;
@@ -45,25 +40,22 @@ body {
   margin-bottom:45px;
   display:inline-block;
 }
-
 #flip div:first-child {
   animation: show 7s linear infinite;
-}
 
-#flip div div {
+}
+#flip div:nth-child(1) div {
+  background:#2900f7;
+} 
+ #flip div:nth-child(2) div {
   background:#42c58a;
 }
-#flip div:first-child div {
-  background:#4ec7f3;
-}
-
-#flip div:second-child div {
+#flip div:nth-child(3) div {
   background:#DC143C;
 }
-
 #flip div:last-child div {
-  background:#DC143C;
-}
+  background:#f3d630;
+} 
 
 @keyframes show {
   0% {margin-top:-270px;}
